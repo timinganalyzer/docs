@@ -17,10 +17,20 @@ can quickly find speed related design issues since setup and hold
 violations are detected, reported, and shown in the diagrams.
 
 You can draw the diagrams using the GUI or Python scripts.  Timing diagrams
-are automatically created from simulation VCD files so they can be 
-annotated and used in documenation. Application notes desribe how to create 
-Verilog or VHDL monitors that automatically generate the diagrams are included.
+can be created automatically from simulation VCD files so they can be 
+annotated and used in documenation. Application notes included in the 
+documentation desribe how to create Verilog or VHDL monitors that 
+automatically generate timing diagrams. 
 
+  
+**SOME NEW CHANGES COMING IN BETA 0.980 SOON**
+
+  * New timing engine with accuracy to 1x10-15 seconds
+  * Added jitter margins
+  * Delays can show min or max annotations
+  * New documentation ReadTheDocs format
+  * Intro to Timing Analysis app note with Python scripts
+  
 
 Table of Contents
 ====================
@@ -33,15 +43,13 @@ Table of Contents
    screenshots_and_videos
    getting_started
    step_by_step_examples
+   documentation
    timing_diagram_library
    download
    faq
    google_group
    contact
    license
-   script_docs/index
-   app_notes/index
-   ref_manual/index
    
 Indices and Tables
 ==================
