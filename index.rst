@@ -22,21 +22,30 @@ annotated and used in documenation. Application notes included in the
 documentation desribe how to create Verilog or VHDL monitors that 
 automatically generate timing diagrams. 
 
-  
 **SOME NEW CHANGES COMING IN BETA 0.980 SOON**
+
+A new app note, **"Intro to Timing Analysis"**,  is included in the
+Documenation section. It describes how to analyze setup and hold paths with
+clock jitter and clock skew and much more. Included scripts can be used as is,
+or modified to analyze any user defined paths.     
 
   * New timing engine with accuracy to 1x10-15 seconds
   * Added jitter margins
   * Delays can show min or max annotations
-  * New documentation ReadTheDocs format
-  * Intro to Timing Analysis app note with Python scripts
-  
+  * Web site moved to ReadTheDocs format
 
-Table of Contents
-====================
+The new documentation can also be viewed and printed in various formats at:
+
+  * `This Web Site <http://web-site.readthedocs.org>`_.
+  * `Reference <http://ref-manula.readthedocs.org>`_.
+  * `Scripting <http://scripting-manual.readthedocs.org>`_.
+  * `Generating Timing Diagrams from Verilog and VHDL Simulations <http://app-notes.readthedocs.org>`_.
+  * `Introduction to Timing Analysis <http://intro-timing-analysis.readthedocs.org>`_.
+
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
 
    features
    latest_news
@@ -51,11 +60,3 @@ Table of Contents
    contact
    license
    
-Indices and Tables
-==================
-
- * :ref:`genindex`
- * :ref:`search`
-
-
-..
