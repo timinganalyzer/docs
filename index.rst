@@ -8,39 +8,25 @@
    :align: center
 
 
-The TimingAnalyzer
+The TimingAnalyzer 
 ==================
 
-Using the TimingAnalyzer, you can quickly draw timing diagrams and build
-libraries of timing diagrams. Using the built-in analysis functions, you
-can quickly find speed related design issues since setup and hold
-violations are detected, reported, and shown in the diagrams.
+Using the TimingAnalyzer, you can quickly and easily draw timing diagrams, build
+libraries of timing diagrams, and perform timing analysis on logic designs. 
+Setup and hold violations are reported to indicate logic design problems.
 
-You can draw the diagrams using the GUI or Python scripts.  Timing diagrams
-can be created automatically from simulation VCD files so they can be 
-annotated and used in documenation. Application notes included in the 
-documentation desribe how to create Verilog or VHDL monitors that 
-automatically generate timing diagrams. 
+Timing diagrams can be created with the GUI, Python scripts, VCD files, and logic
+simulations. The TimingAnalyzer has been designed with focus on timing analysis 
+but is much more than just a simple drawing program. Check out the complete list 
+of features listed on the features page.
 
-**SOME NEW CHANGES COMING IN BETA 0.980 SOON**
 
-A new app note, **"Intro to Timing Analysis"**,  is included in the
-Documenation section. It describes how to analyze setup and hold paths with
-clock jitter and clock skew and much more. Included scripts can be used as is,
-or modified to analyze any user defined paths.     
+Comments and feedback are always welcome.
 
-  * New timing engine with accuracy to 1x10-15 seconds
-  * Added jitter margins
-  * Delays can show min or max annotations
-  * Web site moved to ReadTheDocs format
+Dan Fabrizio
 
-The new documentation can also be viewed and printed in various formats at:
+timinganalyzer@gmail.com
 
-  * `This Web Site <http://web-site.readthedocs.org>`_.
-  * `Reference <http://ref-manula.readthedocs.org>`_.
-  * `Scripting <http://scripting-manual.readthedocs.org>`_.
-  * `Generating Timing Diagrams from Verilog and VHDL Simulations <http://app-notes.readthedocs.org>`_.
-  * `Introduction to Timing Analysis <http://intro-timing-analysis.readthedocs.org>`_.
 
 
 .. toctree::
@@ -48,15 +34,16 @@ The new documentation can also be viewed and printed in various formats at:
    :hidden:
 
    features
-   latest_news
    screenshots_and_videos
    getting_started
+   quick_guide
    step_by_step_examples
-   documentation
+   user_manual
+   scripting_manual
+   app_notes
    timing_diagram_library
    download
    faq
    google_group
    contact
    license
-   

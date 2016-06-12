@@ -6,10 +6,9 @@ Step by Step Example
 .. image:: images/mem_read_cycle.png
 
 
-The Timing Diagram Specifications
+The Timing Diagram Signals
 ---------------------------------
 
-"
 
 ===========  =====   ==========   ==========   ===========   ======
 Signal Name  Freq    Duty Cycle   Edge Times   Start State   Format
@@ -22,25 +21,30 @@ RD_STROBE*                            2nS           H
 WR_STROBE*                            2nS           H
 ===========  =====   ==========   ==========   ===========   ======
 
-"
 
-=======  ==== ==== ====
-Delays   Min  Typ  Max
-=======  ==== ==== ====
-tclkadd  7nS  10nS 12nS
-tpd      7nS  10nS 12nS
-tacc     15nS 20nS 25nS
-tclk2q   2nS  3nS  4nS
-=======  ==== ==== ====
+The Part Delays 
+----------------
 
-"
 
-===========   ==== ==== ====
-Constraints   Min  Typ  Max
-===========   ==== ==== ====
-tsetup        12nS 12nS 12nS
-thold         1nS  1nS  1nS
-===========   ==== ==== ====
+=======  ==== ==== ==== ======================
+Delays   Min  Typ  Max  Description
+=======  ==== ==== ==== ======================
+tclkadd  7nS  10nS 12nS Add gen prop delay
+tpd      7nS  10nS 12nS Comb prop delay
+tacc     15nS 20nS 25nS Mem access time delay
+tclk2q   2nS  3nS  4nS  Reg clk2Q delay
+=======  ==== ==== ==== ======================
+
+
+The Part Constraints 
+----------------
+
+===========   ==== ==== ==== =================
+Constraints   Min  Typ  Max  Description
+===========   ==== ==== ==== =================
+tsetup        12nS 12nS 12nS Mem setup time
+thold         1nS  1nS  1nS  Mem hold time
+===========   ==== ==== ==== =================
 
 
 Start a New Timing Diagram
@@ -50,18 +54,18 @@ Start a New Timing Diagram
 
     #. Start a new timing diagram.
 
-Add the User Defined Constraints and Delays.
+Add the Part Delays and Constraints
 --------------------------------------------
 
-* To add a User Delay, Add Menu -> Delay or Ctrl-7, select User Delay tab in panel.
-* To add a User Constraint, Add Menu -> Constraint or Ctrl-8, select User Constraint tab in panel.
+* To add a Part Delay, Libs Menu -> Part Delay or Shft-1.
+* To add a Part Constraint, Libs Menu -> Part Constraint or Shft-2.
 
     #. Add the Delays shown above.
     #. Add the Constraints shown above.
 
 
 Adding the Signals
-------------------
+--------------------
 
 * To add a Clock, Add Menu -> Clock or Ctrl-1
 * To add a Signal, Add Menu -> Signal or Ctrl-2
@@ -94,14 +98,20 @@ Adding the Pulses to the Signals
        clock cycle.
     #. Disable "Add Pulse" mode. 
 
+
 Adding the Delays and Constraints
 -----------------------------------
 
 * To add a Delay, Add Menu -> Delay or Ctrl-7 or right button click for pop-up menu
 * To add a Constraint, Add Menu -> Constraint or Ctrl-8 or right button click for pop-up menu
 
-* To add a previously used Delay, right button click for pop-up menu and select "Add Used Delay"
-* To add a previously used Constraint, right button click for pop-up menu and select "Add Used Constraint"
+You can quickly add previously used Delays or Constraints. Use the pop-up menu selections
+
+* To add a previously used Delay, right button click for pop-up menu 
+  and select "Add Used Delay".  
+* To add a previously used Constraint, right button click for pop-up menu 
+  and select "Add Used Constraint".
+
 
     #. Select 1st rising edge of CLOCK and 1st edge of ADD.  Add delay tclk2add.
     #. Select 1st edge of ADD and 1st edge of CS*. Add delay tpd.
@@ -115,6 +125,7 @@ Adding the Delays and Constraints
     #. Select 4th rising edge of CLOCK and 2nd edge of RD_STROBE*. Add delay tclk2q
     #. Click in delay and contraint labels in diagram and then use the arrow key
        combinations to position the labels.
+
 
 Adding the StateBars
 ------------------------

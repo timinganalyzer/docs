@@ -14,7 +14,6 @@ Installing the TimingAnalyzer
           start_app.py           --   Python script to start the program
           scripts                --   directory for user scripts
           examples               --   directory for timing diagram examples 
-          settings               --   directory for default and user settings
 
 
 Running the TimingAnalyzer
@@ -35,6 +34,6 @@ System Requirements
 -------------------
 
  * Oracle Java JRE1.6.0 or JDK1.6.0 or newer.
- * Windows XP, Vista, Linux, and OS X.
+ * Windows, Linux, and OS X.
 
 

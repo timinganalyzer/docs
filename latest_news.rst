@@ -1,6 +1,104 @@
 Latest News 
 ===========
 
+6/04/16 Beta version 0.9894
+----------------------------
+
+* Added edge margin color and hash lines
+* Fixed synchronous cycle moves  
+* Moved settings files to user_home_dir/.ta
+* Updated documentation 
+
+
+8/23/15 Beta version 0.9891
+----------------------------
+
+* StateBar are displayed between Clocks. 
+  When multiple clocks are used in a diagram, signals are synchronized to the clock above.
+  Now, the StateBar veritcal lines start at the clock above and finish and end at the clock below.
+  
+
+8/16/15 Beta version 0.989
+----------------------------
+
+* Fixed StateBar display position in Edges.  
+
+
+6/7/15 Beta version 0.987
+------------------------------
+
+The last few versions have been fixes and improvements to "Add Pulse" operations.
+Multiple issues found and fixed which make adding pulses to both asyncrhonous
+and synchronous signals easy again as it was pre beta 0.980. 
+
+
+
+5/31/15 Beta version 0.984
+-----------------------------
+
+The last few minor version updates have been mostly fixes for VCD file related issues.
+
+* Fixed VCD bus size values not the correct length.
+* Fixed VCD analog signal drawing routine to use new time engine.
+* Fixed VCD analog example sine_waves.vcd
+* Fixed VCD file time scale - error shown when label not centered.
+* Fixed verilog app note source files. See google group message "Diagrams from Verilog Simulations".      
+
+
+
+11/9/14 Beta version 0.981 
+-------------------------------
+
+* Added TimeScale Menu option. mS, uS, nS, and pS
+* Accuracy is +- 1/1000 TimeScale 
+* Adding Pulses and Edges was broken in 0.980
+* Added Quick Guide to docs home website
+
+
+11/2/14 Beta version 0.980 is Released.
+--------------------------------------
+
+* New timing engine with pS accuracy.
+
+* Added jitter margins. 
+    * Quickly add new or used Jitter Margins to any edge in timing diagram from pop-up menu
+    * Added Jitter Margin part library menu 
+
+* Delays can show min or max annotations
+
+* Improved Zoom functions.
+    * Zoom In within range.  Drag mouse between 2 times
+    * Zoom In.  + key
+    * Zoom Out. - key
+    * Zoom Full * key
+
+* A new app note, **"Intro to Timing Analysis"**, describes how to analyze setup and hold paths with clock 
+  jitter and clock skew and more. The scripts, which are included in
+  the scripts directory have filenames that start with ita_xxx, can be modified to analyze any user defined paths.     
+
+* Improved python scripting API.  See all the examples in the scripts directory.
+
+* Plus many bug fixes and improvements. 
+
+* The new documentation can also be viewed at READTHEDOCS.  See the links belows.
+
+    * `This Web Site <http://web-site.readthedocs.org>`_.
+    * `Reference <http://ref-manula.readthedocs.org>`_.
+    * `Scripting <http://scripting-manual.readthedocs.org>`_.
+    * `Generating Timing Diagrams from Verilog and VHDL Simulations <http://app-notes.readthedocs.org>`_.
+    * `Introduction to Timing Analysis <http://intro-timing-analysis.readthedocs.org>`_.
+
+* Future Plans
+
+    * Update and improve user docs 
+    * Auto update logic outputs when inputs change
+    * Add more logic functions 
+    * Improve GUI
+    * Improve TimeWarp control 
+
+                    
+
+
 
 9/9/13 Beta version 0.970 is Released.
 --------------------------------------
